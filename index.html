@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="./script.js" type="module" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+      <input type="text" id="search">
+        <h1>CRUD Application</h1>
+        <form id="crud-form">
+          <input type="hidden" id="item-id">
+          <div class="form-group">
+            <label for="item-name">Name:</label>
+            <input type="text" id="item-name" required>
+          </div>
+          <div class="form-group">
+            <label for="item-description">Description:</label>
+            <input type="text" id="item-description" required>
+          </div>
+          <button type="submit">Save</button>
+        </form>
+
+        <table id="crud-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody class="crud-table-items"></tbody>
+        </table>
+
+      </div>
+</body>
+</html>
